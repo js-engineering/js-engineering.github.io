@@ -32,10 +32,8 @@
     transform:translate(50%, -50%);
 }
 
-.ceo-hover:hover {
-    .ceo-text-color {
-        color: rgb(228, 148, 0)
-    }
+.ceo-hover:hover .ceo-text-color {
+    color: rgb(228, 148, 0)
 }
 
 .example-form {
