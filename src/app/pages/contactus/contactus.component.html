@@ -1,0 +1,100 @@
+<div class="img-container">
+    <img src="../../../assets/images/Contact Us.jpg" class="img-fluid img-size" alt="About JS Engineering">
+    <div class="text-block">
+        <h2>Contact Us</h2>
+    </div>
+</div>
+<div class="container-fluid pt-3 pl-5 bg-light">
+    <div class="row">
+        <div style="width: 2%;">
+            <p class="box"></p>
+        </div>
+        <div class="col" style="padding-left: 0px;">
+            <h4 class="font-weight-bold">Contact Us</h4>
+            <br>
+            <mat-card>
+                <div class="ceo-hover">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <img src="../../../assets/images/amalan-img-website.jpeg" class="img-fluid"
+                                    alt="About JS Engineering">
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="row">
+                                    <h5 class="card-title fw-bold ceo-text-color">CEO and MD</h5>
+                                    <div class="col-lg-1">
+                                        <p class="ceo-box"></p>
+                                    </div>
+                                    <div class="col-lg-11">
+                                        <p class="card-text">Arockia Amalanathan P</p>
+                                        <p>Contact No: +91 9585891818</p>
+                                        <p>Mail Id: </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </mat-card>
+            <br>
+            <h6 class="fw-bold">Address:</h6>
+            <p class="card-text">JS Engineering, <br>
+                No.2, SF No.379/D, 1st Floor, <br>
+                9th Street, Jothi Nagar, <br>
+                Varatharajapuram, <br>
+                Upplipalayam-Post, <br>
+                Coimbatore - 641015, <br>
+                TamilNadu, India.
+            </p>
+        </div>
+        <div class="col-sm-6">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d489.53255804271225!2d77.02589094654181!3d11.019074095267413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba85708c0727249%3A0x71735be3521c84fd!2sGandhipudur%2C2nd%20street!5e0!3m2!1sen!2sin!4v1697873381798!5m2!1sen!2sin"
+                width="700" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    <!-- <div class="row">
+        
+    </div> -->
+    <br>
+</div>
+<div class="form-align">
+    <h4 class="font-weight-bold" style="text-align: center;">Enquiry form</h4>
+    <mat-card>
+        <form action="https://formsubmit.co/thirunagar2016@gmail.com" class="example-form" [formGroup]="enquiryform" id="enquiryForm" method="POST">
+            <table class="example-full-width" cellspacing="0">
+                <tr>
+                    <td><mat-form-field class="example-full-width">
+                            <mat-label>Full name</mat-label>
+                            <input formControlName="nameFormControl" name="Name" matInput>
+                        </mat-form-field></td>
+                    <td><mat-form-field class="example-full-width">
+                            <mat-label>Company Name</mat-label>
+                            <input formControlName="companyFormControl" matInput name="Company name">
+                        </mat-form-field></td>
+                </tr>
+            </table>
+            <table class="example-full-width" cellspacing="0">
+                <tr>
+                    <td><mat-form-field class="example-full-width">
+                            <mat-label>Email</mat-label>
+                            <input formControlName="emailFormControl" matInput name="Email" placeholder="abc@gmail.com">
+                        </mat-form-field></td>
+                    <td><mat-form-field class="example-full-width">
+                            <mat-label>Mobile No</mat-label>
+                            <input name="Mobile No" formControlName="mobileFormControl" matInput placeholder="Ex. California">
+                        </mat-form-field></td>
+                </tr>
+            </table>
+            <p>
+                <mat-form-field class="example-full-width">
+                    <mat-label>Message</mat-label>
+                    <textarea name="Message" formControlName="messageFormControl" matInput></textarea>
+                </mat-form-field>
+            </p>
+            <button type="submit" mat-raised-button color="primary">Submit</button>
+        </form>
+    </mat-card>
+</div>

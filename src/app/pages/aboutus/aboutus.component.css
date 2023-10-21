@@ -1,0 +1,14 @@
+.box {
+    width: 6px;
+    height: 30px;
+    background: #195088;
+}
+
+.card-back{
+    background-color: #f0effc;
+}
+
+.img-size{
+    width: 100%;
+    height: 500px;
+}

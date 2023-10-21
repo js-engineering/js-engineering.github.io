@@ -1,0 +1,23 @@
+.navbar-light .navbar-nav .nav-link.active-link{
+    font-weight: bold;
+    color: var(--secondary-color);
+    border-bottom: 3px solid white;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.navback-colour{
+    background-color: #195088;
+}
+
+.nav-link:hover{
+    border-bottom: 3px solid var(--secondary-color);
+    transition: 50ms;
+}
+
+li{
+    padding-left: 2px;
+    padding-right: 2px;
+}
