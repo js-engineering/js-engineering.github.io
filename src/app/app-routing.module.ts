@@ -7,7 +7,7 @@ import { ContactusComponent } from './pages/contactus/contactus.component';
 import { EnquiryComponent } from './pages/enquiry/enquiry.component';
 
 const routes: Routes = [
-  {path:'', component:HomeComponent},
+  {path:'', redirectTo:'home', pathMatch:'full'},
   {path:'home', component:HomeComponent},
   {path:'contactus', component:ContactusComponent},
   {path:'products', component:ProductsComponent},

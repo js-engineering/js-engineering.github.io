@@ -1,11 +1,64 @@
-<div class="form-align">
-    <h4 class="font-weight-bold" style="text-align: center;">Enquiry form</h4>
-    <form action="https://formsubmit.co/thirunagar2016@gmail.com" method="post">
-       <input type="text" placeholder="Full Name" name="Name" required>
-       <input type="text" placeholder="Company Name" name="Company Name" required>
-       <input type="text" placeholder="Email" name="Email" required>
-       <input type="text" placeholder="Mobile No" name="Mobile No" required>
-       <textarea type="text" placeholder="Message" name="Message" required></textarea>
-       <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
+<div class="img-container">
+    <img src="./assets/images/enquiry-back-unsplash.jpg" class="img-size" alt="About JS Engineering">
+</div>
+<div style="padding-bottom: 30px; padding-top: 50px;">
+    <div>
+        <!-- <div class="row"> -->
+            <!-- <div class="col-lg-6">
+                <img src="../../../assets/images/pexels-leeloo.jpg" class="img-fluid" alt="About JS Engineering">
+            </div> -->
+            <!-- <div class="col-lg-12"> -->
+                <div class="form-align">
+                    <h4 class="font-weight-bold" style="text-align: center;">Enquiry form <br>
+                    </h4>
+                    <p style="text-align: center;">Send the enquiry through submitting form below.</p>
+                    <p style="border-bottom: 1px solid grey;"></p>
+                    <form [formGroup]="enquiryForm" (ngSubmit)="submitData()" action="javascript:void(0)">
+                        <div class="row mb-4 mt-3">
+                            <div class="col-lg-6">
+                                <input class="form-control" type="text" placeholder="Full Name*" name="Name"
+                                    formControlName="fullName">
+                                <div *ngIf="fullname.invalid && fullname.touched">
+                                    <span *ngIf="fullname.errors?.required">*Enter Full name</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <input class="form-control" type="text" placeholder="Company Name*" name="Company Name"
+                                    formControlName="companyName">
+                                <div *ngIf="companyname.invalid && companyname.touched">
+                                    <span *ngIf="companyname.errors?.required">*Enter Company name</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <input class="form-control" type="text" placeholder="Email*" name="Email"
+                                formControlName="email">
+                            <div *ngIf="email.invalid && email.touched">
+                                <span *ngIf="email.errors?.required">*Enter Email</span>
+                                <span *ngIf="email.errors?.email">*Enter valid email</span>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <input class="form-control" type="text" placeholder="Mobile No*" name="Mobile No"
+                                formControlName="mobileNo">
+                            <div *ngIf="mobileno.invalid && mobileno.touched">
+                                <span *ngIf="mobileno.errors?.required">*Enter Mobile No</span>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <textarea class="form-control" type="text" placeholder="Message*" name="Message"
+                                formControlName="message"></textarea>
+                            <div *ngIf="message.invalid && message.touched">
+                                <span *ngIf="message.errors?.required">*Enter Message</span>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <button type="submit" class="btn btn-primary"
+                                [disabled]="enquiryForm.invalid">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            <!-- </div>
+        </div> -->
+    </div>
 </div>

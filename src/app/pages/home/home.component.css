@@ -1,6 +1,15 @@
-.sizes {
-    width: 100%;
-    height: 700px;
+@media (min-aspect-ratio: 16/9){
+    .sizes {
+        width: 100%;
+        height: calc(100vh - 50px);
+    }
+}
+
+@media (max-aspect-ratio: 16/9){
+    .sizes {
+        width: 100%;
+        height: calc(100vh - 50px);
+    }
 }
 
 .box {
@@ -21,5 +30,11 @@
     background: #9e6c00;
 }
 
-/* .dealing-hover:hover{
-} */
+.dealing-box{
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.dealing-box:hover{
+    box-shadow: 1px 2px rgba(0, 0, 0, 0.2);
+}
