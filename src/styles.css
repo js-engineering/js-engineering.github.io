@@ -3,6 +3,7 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     min-height: 100vh;
+    background-color: aliceblue;
 }
 
 /* body::-webkit-scrollbar{
@@ -27,4 +28,8 @@ body::-webkit-scrollbar-thumb{
     --secondary-color: #FFA500;
 }
 html, body { height: 100%; }
+
+.bg-univ{
+    background-color: white;
+}
 /* body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; } */
