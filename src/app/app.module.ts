@@ -37,7 +37,7 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
     AppRoutingModule,
     BrowserAnimationsModule, MatCardModule, MatButtonModule, MatDividerModule, MatCheckboxModule, FormsModule, MatFormFieldModule, MatInputModule, MatRippleModule, ReactiveFormsModule,
   ],
-  providers: [{provide: HashLocationStrategy, useClass: HashLocationStrategy}],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

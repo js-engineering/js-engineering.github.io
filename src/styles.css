@@ -30,6 +30,6 @@ body::-webkit-scrollbar-thumb{
 html, body { height: 100%; }
 
 .bg-univ{
-    background-color: white;
+    background-color: white !important;
 }
 /* body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; } */
