@@ -26,8 +26,8 @@ export class EnquiryComponent implements OnInit {
   async submitData() {
     console.log(this.enquiryForm.value);
     if (this.enquiryForm.valid) {
-      emailjs.init('P-tDpNvxmnzSH1iQN');
-      let response = await emailjs.send("service_77r1bdr","template_9bjpuer",{
+      emailjs.init('3mtMDI-4tTU5jNaOP');
+      let response = await emailjs.send("service_udghco8","template_mwwxzkf",{
         fullName: this.enquiryForm.value.fullName,
         mobile: this.enquiryForm.value.mobileNo,
         companyName: this.enquiryForm.value.companyName,

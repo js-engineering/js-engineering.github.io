@@ -19,6 +19,7 @@ import {FormsModule} from '@angular/forms';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import { EnquiryComponent } from './pages/enquiry/enquiry.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     AppRoutingModule,
     BrowserAnimationsModule, MatCardModule, MatButtonModule, MatDividerModule, MatCheckboxModule, FormsModule, MatFormFieldModule, MatInputModule, MatRippleModule, ReactiveFormsModule,
   ],
-  providers: [],
+  providers: [{provide: HashLocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
