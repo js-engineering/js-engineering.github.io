@@ -6,6 +6,10 @@ body{
     background-color: aliceblue;
 }
 
+body .bg-univ{
+    background-color: #fff;
+}
+
 /* body::-webkit-scrollbar{
     width: 0;
 } */
@@ -28,8 +32,4 @@ body::-webkit-scrollbar-thumb{
     --secondary-color: #FFA500;
 }
 html, body { height: 100%; }
-
-.bg-univ{
-    background-color: white !important;
-}
 /* body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; } */
