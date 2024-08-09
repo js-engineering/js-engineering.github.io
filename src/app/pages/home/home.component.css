@@ -42,3 +42,80 @@
 .bg-univ{
     background-color: #fff;
 }
+
+
+/*  Card css start  */
+.card {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px 10px 20px;
+    padding: 10px 0px 10px;
+    max-width: 100%;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    box-shadow: 0 7px 10px rgba(0,0,0,0.1);
+    transform: scale(1.02);
+  }
+
+  .card a{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+  }
+  
+  .card img {
+    width: 150px;
+    height: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .card-content a:hover {
+    color: black;
+  }
+  
+  .card h3 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .card p {
+    margin: 5px 0;
+    font-size: 16px;
+  }
+  
+  .card a {
+    text-decoration: none;
+    color: #195088;;
+    font-weight: 600;
+    font-size: 12px;
+    margin-top: 15px;
+  }
+  
+  
+  @media screen and (max-width: 600px) {
+    .card {
+      flex-direction: column;
+    }
+    
+    .card img {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
+  
+  /*  Card css end  */
+  
